@@ -10,5 +10,9 @@
   max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 32px;
+  padding: 0 24px;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,0 +1,112 @@
+@import '../../styles/variables.scss';
+
+.banner{
+    padding: $spacer-5 $spacer-3;
+    background-image: url('../../../assets/background-home-mobile.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &__left{
+        text-align: center;
+        width: 100%;
+    }
+    &__main-header{
+        color: $color-grey;
+        font-size: $spacer-3;
+        font-weight: $font-light;
+        line-height: $spacer-5;
+        word-spacing: $spacer-1;
+        &--main-header{
+            color: $color-white;
+            font-size: $spacer-6;
+            font-weight: $font-semi-bold;
+            padding: $spacer-2 0;
+            letter-spacing: $spacer-1;
+        }
+    }
+    &__desc{
+        color: $color-grey;
+        font-size: 14px;
+        padding: $spacer-3 0;
+        font-weight: $font-regular;
+    }
+    &__right{
+        // width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: $spacer-6;
+        top: 51%;
+        // left: 0%;
+        transform: translate(-50%, -50%);
+        animation: dance 1s ease-in-out infinite;
+    }
+    &__explore-bg{
+        width: 150px;
+        height: 150px;
+        background-color: $color-white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 20%;
+    }
+
+    @keyframes dance {
+        0% {
+            transform: translate(0, 0);
+          }
+          25% {
+            transform: translateY(-5px);
+          }
+          50% {
+            transform: translate(0, 0);
+          }
+          75% {
+            transform: translateY(8px);
+          }
+          100% {
+            transform: translate(0, 0);
+          }
+      }
+
+    &__explore-p{
+        font-size: $spacer-4;
+    }
+}
+
+//tablet
+@include mobile-pro{
+    .banner{
+        background-image: url('../../../assets/background-home-tablet.jpg');
+    }
+}
+
+@include tablet{
+    .banner{
+        background-image: url('../../../assets/background-home-tablet.jpg');
+    }
+}
+
+@include tablet-pro{
+    .banner{
+        background-image: url('../../../assets/background-home-desktop.jpg');
+    }
+}
+
+@include desktop{
+    .banner{
+        background-image: url('../../../assets/background-home-desktop.jpg');
+        &__wrap{
+            flex-wrap: nowrap;
+        }
+    }
+}

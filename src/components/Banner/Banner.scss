@@ -1,17 +1,20 @@
 @import '../../styles/variables.scss';
 
 .banner{
-    padding: $spacer-5 $spacer-3;
+    padding: $spacer-6 $spacer-3;
     background-image: url('../../../assets/background-home-mobile.jpg');
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    // height: 100vh;
 
     &__wrap{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        padding: $spacer-5 0;
+        gap: 100px;
     }
     &__left{
         text-align: center;
@@ -27,7 +30,7 @@
             color: $color-white;
             font-size: $spacer-6;
             font-weight: $font-semi-bold;
-            padding: $spacer-2 0;
+            margin: $spacer-2 0;
             letter-spacing: $spacer-1;
         }
     }
@@ -36,16 +39,14 @@
         font-size: 14px;
         padding: $spacer-3 0;
         font-weight: $font-regular;
+        margin: 0 auto;
     }
     &__right{
         // width: 100%;
         text-align: center;
-        position: absolute;
-        bottom: $spacer-6;
-        top: 51%;
-        // left: 0%;
-        transform: translate(-50%, -50%);
-        animation: dance 1s ease-in-out infinite;
+        display: flex;
+        align-items: baseline;
+        
     }
     &__explore-bg{
         width: 150px;
@@ -56,8 +57,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        position: relative;
-        top: 20%;
+        // position: relative;
+        // top: 20%;
+        transform: translate(-50%, -50%);
+        animation: dance 1s ease-in-out infinite;
     }
 
     @keyframes dance {
@@ -83,30 +86,85 @@
     }
 }
 
-//tablet
+// mobile-pro
 @include mobile-pro{
     .banner{
         background-image: url('../../../assets/background-home-tablet.jpg');
+        &__desc{
+            font-size: $spacer-3;
+            padding: $spacer-4 $spacer-4;
+            line-height: 23px;
+        }
+        &__main-header{
+            font-size: 18px;
+            &--main-header{
+                font-size: 50px;
+                margin: $spacer-3 0;
+            }
+        }
     }
 }
 
+
+//tablet
 @include tablet{
     .banner{
         background-image: url('../../../assets/background-home-tablet.jpg');
+        &__desc{
+            font-size: 18px;
+            padding: $spacer-4 $spacer-5;
+            line-height: 23px;
+        }
+        &__main-header{
+            font-size: 19px;
+            &--main-header{
+                font-size: 55px;
+                margin: $spacer-3 0;
+            }
+        }
     }
 }
 
+//tablet-pro
 @include tablet-pro{
     .banner{
         background-image: url('../../../assets/background-home-desktop.jpg');
+        &__desc{
+            font-size: 19px;
+            padding: $spacer-5 $spacer-6;
+            line-height: 23px;
+        }
+        &__main-header{
+            font-size: 19px;
+            &--main-header{
+                font-size: 60px;
+                margin: $spacer-4 0;
+            }
+        }
     }
 }
 
+//desktop
 @include desktop{
     .banner{
         background-image: url('../../../assets/background-home-desktop.jpg');
         &__wrap{
             flex-wrap: nowrap;
+            gap: unset;
+        }
+        &__left{
+            width: 50%;
+        }
+        &__right{
+            width: 50%;
+            justify-content: flex-end;
+            padding: 0 $spacer-6;
+        }
+        &__explore-bg{
+            position: fixed;
+        }
+        &__desc{
+            max-width: 500px;
         }
     }
 }

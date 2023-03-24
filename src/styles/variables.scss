@@ -18,7 +18,7 @@
 }
 
 @mixin desktop {
-    @media (min-width: 1024px) and (max-width: 1400px) {
+    @media (min-width: 1024px) {
         @content;
     }
 }
@@ -46,4 +46,4 @@ $color-orange: #ff8533;
 $color-green: #00b300;
 $color-blue: #1f88c9;
 $color-blue-2: #0e2e58;
-$color-grey: #aaaaaa;
+$color-grey: #d0d6f9;

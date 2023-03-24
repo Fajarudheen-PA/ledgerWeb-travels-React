@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.navbar{
+    background: transparent;
+    padding: $spacer-5 0;
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+    }
+    &__brand{
+        width: 50%;
+        display: flex;
+    }
+    &__brand-head{
+        text-align: left;
+        font-size: 18px;
+    }
+    &__content{
+        width: 50%;
+    }
+}

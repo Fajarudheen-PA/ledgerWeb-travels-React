@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 
+
 .banner{
     padding: $spacer-6 $spacer-3;
     background-image: url('../../../assets/background-home-mobile.jpg');
@@ -23,13 +24,13 @@
     &__main-header{
         color: $color-grey;
         font-size: $spacer-3;
-        font-weight: $font-light;
+        font-weight: $font-regular;
         line-height: $spacer-5;
         word-spacing: $spacer-1;
         &--main-header{
             color: $color-white;
             font-size: $spacer-6;
-            font-weight: $font-semi-bold;
+            font-weight: $font-regular;
             margin: $spacer-2 0;
             letter-spacing: $spacer-1;
         }
@@ -158,13 +159,18 @@
         &__right{
             width: 50%;
             justify-content: flex-end;
+            align-items: baseline;
             padding: 0 $spacer-6;
-        }
-        &__explore-bg{
-            position: fixed;
         }
         &__desc{
             max-width: 500px;
+        }
+        &__main-header{
+            font-size: 20px;
+            &--main-header{
+                font-size: 70px;
+                margin: $spacer-4 0;
+            }
         }
     }
 }

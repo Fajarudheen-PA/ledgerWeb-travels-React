@@ -1,10 +1,12 @@
-import Banner from './components/Banner/Banner';
+import NavBar from './components/NavBar/NavBar';
+// import Banner from './components/Banner/Banner';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Banner/>
+      <NavBar/>
+      {/* <Banner/> */}
     </div>
   );
 }

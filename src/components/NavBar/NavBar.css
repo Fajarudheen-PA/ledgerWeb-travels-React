@@ -1,0 +1,19 @@
+.navbar {
+  background: transparent;
+  padding: 32px 0;
+}
+.navbar__wrap {
+  display: flex;
+  align-items: center;
+}
+.navbar__brand {
+  width: 50%;
+  display: flex;
+}
+.navbar__brand-head {
+  text-align: left;
+  font-size: 18px;
+}
+.navbar__content {
+  width: 50%;
+}/*# sourceMappingURL=NavBar.css.map */

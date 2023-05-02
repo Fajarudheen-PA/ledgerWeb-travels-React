@@ -1,19 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.scss'
 
 function NavBar() {
   return (
-    <div className='navbar'>
-        <div className='content-wrapper'>
-            <div className='navbar__wrap'>
-                <div className='navbar__brand'>
-                    <h1 className='navbar__brand-head'>ledger Web</h1>
-                </div>
-                <div className='navbar__content'>
-
-                </div>
-            </div>
-        </div>
+    <div className='ledger-navbar'>
+      <div className='content-wrapper'>
+        <nav className="navbar navbar-expand-lg">
+          <div className="container-xxl">
+            <Link to="/" className="navbar-brand">ledger Webb</Link>
+          </div>
+        </nav>
+      </div>
     </div>
   )
 }

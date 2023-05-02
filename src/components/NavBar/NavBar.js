@@ -9,7 +9,7 @@ function NavBar() {
       <div className='content-wrapper'>
         <nav className="navbar navbar-expand-lg">
           <div className="container-xxl">
-            <Link to="/" className="navbar-brand">ledger Webb</Link>
+            <Link to="/" className="navbar-brand"><span><img src=''/></span>ledger Webb</Link>
           </div>
         </nav>
       </div>

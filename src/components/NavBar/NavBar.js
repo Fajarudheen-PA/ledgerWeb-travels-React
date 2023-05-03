@@ -15,14 +15,7 @@ function NavBar() {
             </Link>
             
             {/* navbar toggler for mobile */}
-            <div className='ledger-navbar__nav-toggle-grp'>
-              <button className="btn btn-outline-success">Login</button>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ledgerHeader" aria-controls="ledgerHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
               <div className="collapse navbar-collapse" id="ledgerHeader">
-                <div className="ledger-navbar__overlay"></div>
                 <ul className="navbar-nav">
                   <li class="ledger-navbar__nav-item">
                     <Link to='/' className='ledger-navbar__nav-link' aria-current="page">Home</Link>
@@ -41,8 +34,15 @@ function NavBar() {
                   </li>
                 </ul>
               </div>
-            </div>
-            {/* <button className="btn">Login</button> */}
+              <div className='ledger-navbar__right-sec'>
+                <div className='ledger-navbar__btn'>
+                  <Link to='/' className='ledger-navbar__btn-link'>Login</Link>
+                </div>
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ledgerHeader" aria-controls="ledgerHeader" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+             </div>
           </div>
         </nav>
       </div>

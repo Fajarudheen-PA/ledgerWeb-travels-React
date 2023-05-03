@@ -1,6 +1,123 @@
 @import '../../styles/variables.scss';
 
 .ledger-navbar{
-    background: transparent;
-    padding: $spacer-2 0;
+    // background: transparent;
+    position: fixed;
+    padding: $spacer-0 0;
+    background-color: $color-white;
+    box-shadow: 0 2px 5px $color-grey-2;
+    width: 100vw;
+    z-index: 999;
+
+    .container-xxl{
+        padding: $spacer-0;
+    }
+    .navbar-brand{
+        padding: $spacer-0;
+        margin: $spacer-0;
+        z-index: 4;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navbar-toggler{
+        border: none;
+        z-index: 3;
+        padding: $spacer-0;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    &__nav-toggle-grp{
+        display: flex;
+        gap: 10%;
+    }
+    &__nav-item{
+        margin: $spacer-3 $spacer-4;
+        &:last-child{
+            margin-right: $spacer-0;
+        }
+    }
+    &__nav-link{
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+        // color: $color-black;
+        font-size: $spacer-3;
+        font-weight: $font-medium;
+        &:hover{
+            color: $color-blue-2;
+            text-decoration: none;
+        }
+        &.active{
+            color: $color-blue-2;
+        }
+        
+    }
+    &__overlay{
+        display: none;
+    }
+    &__gradient{
+        fill: $color-blue-2;
+    }
+}
+
+@include tablet{
+    .ledger-navbar{
+        padding: $spacer-2 0;
+        // position: fixed;
+        &__overlay{
+            display: block;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0,0,0,0.6);
+            transition: 0.3s all;
+            z-index: 0;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                position: fixed;
+                top: 100px;
+                left: 0;
+                background-color: $color-white;
+                width: 100%;
+                min-width: 280px;
+                height: max-content;
+                padding: $spacer-3;
+                transform: translateY(-280px);
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                z-index: 999;
+            }
+            &.show {
+                .navbar-nav {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        }
+        &__nav-item{
+            &:last-child{
+                margin: $spacer-3 $spacer-4;
+            }
+        }
+        .navbar-nav li{
+            &:hover{
+                // background: linear-gradient(90deg,$color-white, $color-grey-2, $color-white);
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+@keyframes navbar-slider{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

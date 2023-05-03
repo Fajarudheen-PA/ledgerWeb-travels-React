@@ -1,6 +1,12 @@
 //break-points
 @mixin mobile-pro {
-    @media (min-width: 376px) and (max-width: 768px) {
+    @media (min-width: 601px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile-tablet {
+    @media (max-width: 991.9px) {
         @content;
     }
 }
@@ -47,3 +53,4 @@ $color-green: #00b300;
 $color-blue: #1f88c9;
 $color-blue-2: #0e2e58;
 $color-grey: #d0d6f9;
+$color-grey-2: #aaaaaa;

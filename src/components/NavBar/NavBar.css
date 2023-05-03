@@ -1,19 +1,109 @@
-.navbar {
-  background: transparent;
-  padding: 32px 0;
+.ledger-navbar {
+  position: fixed;
+  padding: 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px #aaaaaa;
+  width: 100vw;
+  z-index: 999;
 }
-.navbar__wrap {
-  display: flex;
+.ledger-navbar .container-xxl {
+  padding: 0;
+}
+.ledger-navbar .navbar-brand {
+  padding: 0;
+  margin: 0;
+  z-index: 4;
+}
+.ledger-navbar .navbar-expand-lg .navbar-collapse {
+  justify-content: space-evenly;
   align-items: center;
 }
-.navbar__brand {
-  width: 50%;
+.ledger-navbar .navbar-toggler {
+  border: none;
+  z-index: 3;
+  padding: 0;
+}
+.ledger-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.ledger-navbar__nav-toggle-grp {
   display: flex;
+  gap: 10%;
 }
-.navbar__brand-head {
-  text-align: left;
-  font-size: 18px;
+.ledger-navbar__nav-item {
+  margin: 16px 24px;
 }
-.navbar__content {
-  width: 50%;
+.ledger-navbar__nav-item:last-child {
+  margin-right: 0;
+}
+.ledger-navbar__nav-link {
+  background: linear-gradient(90deg, #001a4d, #0055ff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ledger-navbar__nav-link:hover {
+  color: #0e2e58;
+  text-decoration: none;
+}
+.ledger-navbar__nav-link.active {
+  color: #0e2e58;
+}
+.ledger-navbar__overlay {
+  display: none;
+}
+.ledger-navbar__gradient {
+  fill: #0e2e58;
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .ledger-navbar {
+    padding: 8px 0;
+  }
+  .ledger-navbar__overlay {
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s all;
+    z-index: 0;
+  }
+  .ledger-navbar .navbar-collapse .navbar-nav {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 280px;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 16px;
+    transform: translateY(-280px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 999;
+  }
+  .ledger-navbar .navbar-collapse.show .navbar-nav {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .ledger-navbar__nav-item:last-child {
+    margin: 16px 24px;
+  }
+  .ledger-navbar .navbar-nav li:hover {
+    transform: translateX(3px);
+  }
+}
+@keyframes navbar-slider {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=NavBar.css.map */

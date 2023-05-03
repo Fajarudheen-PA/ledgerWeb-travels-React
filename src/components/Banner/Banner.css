@@ -74,6 +74,7 @@
 }
 .banner__explore-p {
   font-size: 24px;
+  margin-bottom: unset;
 }
 
 @media (min-width: 376px) and (max-width: 768px) {

@@ -6,8 +6,10 @@
     background-image: url('../../../assets/background-home-mobile.jpg');
     background-size: cover;
     width: 100%;
-    height: auto;
-    // height: 100vh;
+    min-height: 450px;
+    position: absolute;
+    top: 80px;
+    margin: 0 auto;
 
     &__wrap{
         display: flex;
@@ -62,6 +64,7 @@
         // top: 20%;
         transform: translate(-50%, -50%);
         animation: dance 1s ease-in-out infinite;
+        text-decoration: none;
     }
 
     @keyframes dance {
@@ -84,7 +87,11 @@
 
     &__explore-p{
         font-size: $spacer-4;
+        font-weight: $font-semi-bold;
         margin-bottom: unset;
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
     }
 }
 

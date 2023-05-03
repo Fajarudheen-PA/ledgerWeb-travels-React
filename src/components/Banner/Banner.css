@@ -3,7 +3,10 @@
   background-image: url("../../../assets/background-home-mobile.jpg");
   background-size: cover;
   width: 100%;
-  height: auto;
+  min-height: 450px;
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
 }
 .banner__wrap {
   display: flex;
@@ -54,6 +57,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
   animation: dance 1s ease-in-out infinite;
+  text-decoration: none;
 }
 @keyframes dance {
   0% {
@@ -74,10 +78,15 @@
 }
 .banner__explore-p {
   font-size: 24px;
+  font-weight: 600;
   margin-bottom: unset;
+  background: linear-gradient(90deg, #001a4d, #0055ff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .banner {
     background-image: url("../../../assets/background-home-tablet.jpg");
   }

@@ -8,9 +8,9 @@ function Banner() {
         <div className='content-wrapper'>
             <div className='banner__wrap'>
                 <div className='banner__left'>
-                    <h1 className='banner__main-header'>SO, YOU WANT TO TRAVEL TO</h1>
+                    <h1 className='banner__main-header'>SO, YOU WANT TO TRAVEL</h1>
                     <h1 className='banner__main-header banner__main-header--main-header'>ABROAD</h1>
-                    <p className='banner__desc'>Lets make it through <span style={{fontWeight:'600', color:'white'}}>Ledger Web.</span> We offer the best travel deals and experiences for your next adventure. Our team of experts is dedicated to helping you plan the perfect trip, and our user-friendly platform makes it easy to book flights, visa and passport services all in one place.</p>
+                    <p className='banner__desc'>Let's make your travel dreams come true with <span style={{fontWeight:'600', color:'white'}}>Ledger Webb!</span><br/>We offer unbeatable travel deals and unforgettable experiences for your next adventure. Our expert team is dedicated to helping you plan the perfect trip, and our user-friendly platform makes it easy to book flights, visas, and passport services all in one place.</p>
                 </div>
                 <div className='banner__right'>
                     <Link to='/' className='banner__explore-bg'>

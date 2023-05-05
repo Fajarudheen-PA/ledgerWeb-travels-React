@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.overview{
+    background-color: $color-white;
+    padding: $spacer-5 0;
+
+    &__wrap{
+        display: flex;
+    }
+}

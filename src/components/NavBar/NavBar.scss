@@ -67,10 +67,12 @@
         }
     }
     &__nav-item{
+        display: flex;
+        justify-content: center;
         margin: $spacer-3 $spacer-4;
-        &:last-child{
-            margin-right: $spacer-0;
-        }
+        // &:last-child{
+        //     margin-right: $spacer-0;
+        // }
     }
     &__nav-link{
         background: linear-gradient(90deg,#001a4d,#0055ff);

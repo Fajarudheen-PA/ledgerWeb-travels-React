@@ -4,9 +4,9 @@
   background-size: cover;
   width: 100%;
   min-height: 500px;
-  position: absolute;
-  top: 80px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 .banner__wrap {
   display: flex;

@@ -7,4 +7,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 4px 0;
+}
+.overview__left {
+  text-align: center;
+  width: 100%;
+}
+.overview__right {
+  text-align: center;
 }/*# sourceMappingURL=Overview.css.map */

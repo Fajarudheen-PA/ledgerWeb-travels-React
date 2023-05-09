@@ -62,7 +62,7 @@
 }
 
 //mobile-pro
-@include mobile-pro{
+@include mobile-pro-desktop{
     .overview{
         &__wrap{
             flex-wrap: nowrap;

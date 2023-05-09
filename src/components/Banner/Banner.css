@@ -98,6 +98,9 @@
   .banner {
     background-image: url("../../../assets/background-home-tablet.jpg");
   }
+  .banner__wrap {
+    padding-top: 90px;
+  }
   .banner__desc {
     font-size: 16px;
     padding: 24px 24px;
@@ -115,6 +118,9 @@
   .banner {
     background-image: url("../../../assets/background-home-tablet.jpg");
   }
+  .banner__wrap {
+    padding-top: 90px;
+  }
   .banner__desc {
     font-size: 18px;
     padding: 24px 32px;
@@ -131,6 +137,9 @@
 @media (min-width: 992px) and (max-width: 1023px) {
   .banner {
     background-image: url("../../../assets/background-home-desktop.jpg");
+  }
+  .banner__wrap {
+    padding-top: 90px;
   }
   .banner__desc {
     font-size: 19px;

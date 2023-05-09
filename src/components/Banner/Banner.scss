@@ -109,6 +109,9 @@
 @include mobile-pro{
     .banner{
         background-image: url('../../../assets/background-home-tablet.jpg');
+        &__wrap{
+            padding-top: 90px;
+        }
         &__desc{
             font-size: $spacer-3;
             padding: $spacer-4 $spacer-4;
@@ -129,6 +132,9 @@
 @include tablet{
     .banner{
         background-image: url('../../../assets/background-home-tablet.jpg');
+        &__wrap{
+            padding-top: 90px;
+        }
         &__desc{
             font-size: 18px;
             padding: $spacer-4 $spacer-5;
@@ -148,6 +154,9 @@
 @include tablet-pro{
     .banner{
         background-image: url('../../../assets/background-home-desktop.jpg');
+        &__wrap{
+            padding-top: 90px;
+        }
         &__desc{
             font-size: 19px;
             padding: $spacer-5 $spacer-6;

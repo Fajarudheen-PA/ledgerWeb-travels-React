@@ -13,6 +13,17 @@
   text-align: center;
   width: 100%;
 }
+.overview__main-header {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-size: calc(28px + 0.9vw);
+}
+.overview__desc {
+  color: #aaaaaa;
+  font-weight: 400;
+}
 .overview__right {
   text-align: center;
+  width: 100%;
 }/*# sourceMappingURL=Overview.css.map */

@@ -56,4 +56,29 @@
   font-size: 12px;
   color: #595959;
   text-align: start;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .overview__wrap {
+    flex-wrap: nowrap;
+    gap: 8%;
+  }
+  .overview__left {
+    width: 50%;
+  }
+  .overview__right {
+    width: 50%;
+  }
+  .overview__main-header {
+    text-align: start;
+  }
+  .overview__desc {
+    text-align: start;
+  }
+  .overview__icon-grp {
+    width: 19%;
+  }
+  .overview__content {
+    width: 81%;
+  }
 }/*# sourceMappingURL=Overview.css.map */

@@ -60,3 +60,31 @@
         }
     }
 }
+
+//mobile-pro
+@include mobile-pro{
+    .overview{
+        &__wrap{
+            flex-wrap: nowrap;
+            gap: 8%;
+        }
+        &__left{
+            width: 50%;
+        }
+        &__right{
+            width: 50%;
+        }
+        &__main-header{
+            text-align: start;
+        }
+        &__desc{
+            text-align: start;
+        }
+        &__icon-grp{
+            width: 19%;
+        }
+        &__content{
+            width: 81%;
+        }
+    }
+}

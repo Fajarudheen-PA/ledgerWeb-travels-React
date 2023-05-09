@@ -22,8 +22,38 @@
 .overview__desc {
   color: #595959;
   font-weight: 400;
+  margin-bottom: 24px;
+}
+.overview__image {
+  width: 100%;
+  margin-bottom: 32px;
 }
 .overview__right {
   text-align: center;
   width: 100%;
+}
+.overview__feature-grp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview__icon-grp {
+  width: 25%;
+  margin-right: 16px;
+}
+.overview__icon-grp__icon {
+  width: 100%;
+}
+.overview__content {
+  width: 75%;
+  text-align: start;
+}
+.overview__content h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.overview__content p {
+  font-size: 12px;
+  color: #595959;
+  text-align: start;
 }/*# sourceMappingURL=Overview.css.map */

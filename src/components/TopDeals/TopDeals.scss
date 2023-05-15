@@ -36,13 +36,11 @@
             padding-bottom: $spacer-3;
         }
         &__price{
-            background-color: $color-grey;
+            background-color: $color-grey-4;
             border-radius: 0 0 $spacer-3 $spacer-3;
             &__left{
                 width: 50%;
-                p{
-                    margin: $spacer-0;
-                }
+                
             }
             &__right{
                 width: 50%;

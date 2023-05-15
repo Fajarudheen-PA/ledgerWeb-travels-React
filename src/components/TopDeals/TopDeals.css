@@ -35,14 +35,11 @@
   padding-bottom: 16px;
 }
 .topdeals__card__price {
-  background-color: #d0d6f9;
+  background-color: #f2f2f2;
   border-radius: 0 0 16px 16px;
 }
 .topdeals__card__price__left {
   width: 50%;
-}
-.topdeals__card__price__left p {
-  margin: 0;
 }
 .topdeals__card__price__right {
   width: 50%;

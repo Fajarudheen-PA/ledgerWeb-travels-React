@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import Banner from '../components/Banner/Banner'
 import Overview from '../components/Overview/Overview'
+import TopDeals from '../components/TopDeals/TopDeals'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <NavBar/>
         <Banner/>
         <Overview/>
+        <TopDeals/>
     </div>
   )
 }

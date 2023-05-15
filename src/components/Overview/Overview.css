@@ -83,4 +83,12 @@
   .overview__content {
     width: 81%;
   }
+}
+@media (min-width: 1024px) {
+  .overview__content h3 {
+    font-size: 20px;
+  }
+  .overview__content p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Overview.css.map */

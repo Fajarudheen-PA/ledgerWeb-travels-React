@@ -82,6 +82,7 @@ function Overview() {
                   </div>
                 </div>
             </div>
+          <hr/>
         </div>
     </div>
   )

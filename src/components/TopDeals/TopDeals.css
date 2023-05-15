@@ -14,4 +14,36 @@
 }
 .topdeals__card {
   width: 100%;
+  border: 1px solid #d0d6f9;
+  border-radius: 16px;
+}
+.topdeals__card__image {
+  width: 100%;
+  max-height: 280px;
+  border-radius: 16px 16px 0 0;
+}
+.topdeals__card__head {
+  font-size: 20px;
+  padding: 8px 0;
+  font-weight: 700;
+  margin: 0 16px;
+}
+.topdeals__card__desc {
+  font-size: 14px;
+  color: #595959;
+  margin: 0 16px;
+  padding-bottom: 16px;
+}
+.topdeals__card__price {
+  background-color: #d0d6f9;
+  border-radius: 0 0 16px 16px;
+}
+.topdeals__card__price__left {
+  width: 50%;
+}
+.topdeals__card__price__left p {
+  margin: 0;
+}
+.topdeals__card__price__right {
+  width: 50%;
 }/*# sourceMappingURL=TopDeals.css.map */

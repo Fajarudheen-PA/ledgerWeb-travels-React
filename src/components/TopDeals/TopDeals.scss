@@ -1,6 +1,12 @@
 @import '../../styles/variables.scss';
 
 .topdeals{
-    padding: $spacer-5 0;
+    padding: $spacer-3 0;
     background-color: $color-white;
+
+    &__main-head{
+        text-align: center;
+        font-size: calc(25px + 0.9vw);
+        font-weight: $font-bold;
+    }
 }

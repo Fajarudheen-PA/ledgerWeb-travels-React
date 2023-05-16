@@ -35,6 +35,7 @@
   padding-bottom: 16px;
 }
 .topdeals__card__price {
+  display: flex;
   background-color: #f2f2f2;
   border-radius: 0 0 16px 16px;
 }
@@ -43,4 +44,25 @@
 }
 .topdeals__card__price__right {
   width: 50%;
+}
+.topdeals__card__price__head {
+  margin: 0;
+  font-size: 16px;
+  color: #595959;
+  margin: 0 16px;
+}
+.topdeals__card__price__head--rate {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=TopDeals.css.map */

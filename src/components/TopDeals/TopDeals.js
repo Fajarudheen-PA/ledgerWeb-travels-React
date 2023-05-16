@@ -16,8 +16,8 @@ function TopDeals() {
             </div>
             <div className='topdeals__card__price'>
               <div className="topdeals__card__price__left">
-                <p>Price</p>
-                <p>₹20,000/-</p>
+                <p className='topdeals__card__price__head'>Price</p>
+                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹ 20,000/-</p>
               </div>
               <div className="topdeals__card__price__right"></div>
             </div>

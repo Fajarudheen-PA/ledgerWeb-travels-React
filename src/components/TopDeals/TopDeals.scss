@@ -22,6 +22,8 @@
             width: 100%;
             max-height: 280px;
             border-radius: $spacer-3 $spacer-3 0 0;
+            // box-shadow: 0px 14px 9px -5px rgba(147, 233, 190, 0.8);
+            // margin-bottom: $spacer-2;
         }
         &__head{
             font-size: 20px;
@@ -36,15 +38,35 @@
             padding-bottom: $spacer-3;
         }
         &__price{
+            display: flex;
             background-color: $color-grey-4;
             border-radius: 0 0 $spacer-3 $spacer-3;
             &__left{
                 width: 50%;
-                
             }
             &__right{
                 width: 50%;
             }
+            &__head{
+                margin: $spacer-0;
+                font-size: $spacer-3;
+                color: $color-grey-3;
+                margin: 0 $spacer-3;
+                &--rate{
+                    font-size: 18px;
+                    color: $color-black;
+                    font-weight: $font-bold;
+                    margin-bottom: $spacer-2;
+                }
+            }
         }
     }
 }
+@keyframes circularMotion {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

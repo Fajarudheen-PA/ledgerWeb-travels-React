@@ -1,5 +1,6 @@
 import React from 'react'
 import './TopDeals.scss'
+import { Link } from 'react-router-dom'
 
 function TopDeals() {
   return (
@@ -17,9 +18,13 @@ function TopDeals() {
             <div className='topdeals__card__price'>
               <div className="topdeals__card__price__left">
                 <p className='topdeals__card__price__head'>Price</p>
-                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹ 20,000/-</p>
+                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹20,000/-</p>
               </div>
-              <div className="topdeals__card__price__right"></div>
+              <div className="topdeals__card__price__right">
+                <div>
+                  <Link to='/' className='topdeals__card__btn'>Ticket Booking</Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

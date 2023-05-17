@@ -37,7 +37,7 @@ function TopDeals() {
             <div className='topdeals__card__price'>
               <div className="topdeals__card__price__left">
                 <p className='topdeals__card__price__head'>Price</p>
-                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹20,000/-</p>
+                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹50,999/-</p>
               </div>
               <div className="topdeals__card__price__right">
                 <Link to='/' className='topdeals__card__btn'>Ticket Booking</Link>
@@ -55,7 +55,7 @@ function TopDeals() {
             <div className='topdeals__card__price'>
               <div className="topdeals__card__price__left">
                 <p className='topdeals__card__price__head'>Price</p>
-                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹21,999/-</p>
+                <p className='topdeals__card__price__head topdeals__card__price__head--rate'>₹23,999/-</p>
               </div>
               <div className="topdeals__card__price__right">
                 <Link to='/' className='topdeals__card__btn'>Ticket Booking</Link>

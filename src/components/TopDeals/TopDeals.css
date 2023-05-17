@@ -30,7 +30,7 @@
 }
 .topdeals__card__image {
   width: 100%;
-  max-height: calc(420px + 0.9vw);
+  max-height: 420px;
   border-radius: 16px 16px 0 0;
   box-shadow: 0px 14px 9px -5px rgba(147, 233, 190, 0.8);
   margin-bottom: 8px;
@@ -100,5 +100,23 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (min-width: 421px) and (max-width: 600px) {
+  .topdeals__card {
+    width: 80%;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .topdeals__card-group {
+    justify-content: space-evenly;
+    margin: 0 -8px;
+  }
+  .topdeals__card {
+    width: calc(50% - 16px);
+    margin: 8px 8px;
+  }
+  .topdeals__card__content {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=TopDeals.css.map */

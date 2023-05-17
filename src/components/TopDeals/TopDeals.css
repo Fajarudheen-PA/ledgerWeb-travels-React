@@ -60,7 +60,6 @@
   margin: auto;
 }
 .topdeals__card__price__head {
-  margin: 0;
   font-size: 16px;
   color: #595959;
   margin: 0 16px;
@@ -104,19 +103,62 @@
 }
 @media (min-width: 421px) and (max-width: 600px) {
   .topdeals__card {
-    width: 80%;
+    width: 76%;
   }
 }
 @media (min-width: 601px) and (max-width: 768px) {
   .topdeals__card-group {
     justify-content: space-evenly;
-    margin: 0 -8px;
+    margin: 0 -4px;
   }
   .topdeals__card {
-    width: calc(50% - 16px);
-    margin: 8px 8px;
+    width: calc(50% - 8px);
+    margin: 8px 4px;
   }
   .topdeals__card__content {
     justify-content: flex-start;
+  }
+  .topdeals__card__image {
+    max-height: 390px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .topdeals__card-group {
+    justify-content: space-evenly;
+    margin: 0 -4px;
+  }
+  .topdeals__card {
+    width: calc(50% - 8px);
+    margin: 8px 4px;
+  }
+  .topdeals__card__content {
+    justify-content: flex-start;
+  }
+  .topdeals__card__image {
+    min-height: 430px;
+  }
+  .topdeals__card__btn {
+    max-width: 119px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .topdeals__card-group {
+    margin: 0 -8px;
+  }
+  .topdeals__card {
+    width: calc(25% - 16px);
+    margin: 8px 8px;
+  }
+  .topdeals__card:hover {
+    scale: 1.03;
+    box-shadow: 0px 0px 11px 3px #d0d6f9;
+  }
+  .topdeals__card__content {
+    justify-content: flex-start;
+    min-height: 100px;
+  }
+  .topdeals__card__image {
+    max-height: 342px;
   }
 }/*# sourceMappingURL=TopDeals.css.map */

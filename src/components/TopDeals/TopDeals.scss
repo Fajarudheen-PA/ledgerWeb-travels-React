@@ -61,7 +61,6 @@
                 margin: auto;
             }
             &__head{
-                margin: $spacer-0;
                 font-size: $spacer-3;
                 color: $color-grey-3;
                 margin: 0 $spacer-3;
@@ -109,7 +108,7 @@
 @include mobile-mid-range{
     .topdeals{
         &__card{
-            width: 80%;
+            width: 76%;
         }
     }
 }
@@ -118,13 +117,62 @@
     .topdeals{
         &__card-group{
             justify-content: space-evenly;
+            margin: 0 (-$spacer-1);
+        }
+        &__card{
+            width: calc(50% - 8px);
+            margin: $spacer-2 $spacer-1;
+            &__content{
+                justify-content: flex-start;
+            }
+            &__image{
+                max-height: 390px;
+            }
+        }
+    }
+}
+
+@include tab-tablet-pro{
+    .topdeals{
+        &__card-group{
+            justify-content: space-evenly;
+            margin: 0 (-$spacer-1);
+        }
+        &__card{
+            width: calc(50% - 8px);
+            margin: $spacer-2 $spacer-1;
+            &__content{
+                justify-content: flex-start;
+            }
+            &__image{
+                min-height: 430px;
+            }
+            &__btn{
+                max-width: 119px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@include desktop{
+    .topdeals{
+        &__card-group{
             margin: 0 (-$spacer-2);
         }
         &__card{
-            width: calc(50% - 16px);
+            width: calc(25% - 16px);
             margin: $spacer-2 $spacer-2;
+            &:hover{
+                scale: 1.03;
+                box-shadow: 0px 0px 11px 3px $color-grey;
+            }
             &__content{
                 justify-content: flex-start;
+                min-height: 100px;
+            }
+            &__image{
+                max-height: 342px;
             }
         }
     }

@@ -1,4 +1,10 @@
 //break-points
+@mixin mobile-mid-range {
+    @media (min-width: 421px) and (max-width: 600px) {
+        @content;
+    }
+}
+
 @mixin mobile-pro {
     @media (min-width: 601px) and (max-width: 768px) {
         @content;

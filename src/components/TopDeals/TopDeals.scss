@@ -19,6 +19,12 @@
         border: 1px solid $color-grey;
         border-radius: 16px;
         margin: $spacer-3 0;
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 120px;
+        }
         &__image{
             width: 100%;
             max-height: 280px;

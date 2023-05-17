@@ -29,10 +29,10 @@ function TopDeals() {
 
           {/* card */}
           <div className="topdeals__card">
-            <img src="../../../images/ledger-deals-dubai.jpg" alt="Offer-1" className='topdeals__card__image'/>
+            <img src="../../../images/ledger-deals-uk.jpg" alt="Offer-1" className='topdeals__card__image'/>
             <div className='topdeals__card__content'>
-              <h4 className='topdeals__card__head'>Kochi - Dubai</h4>
-              <p className='topdeals__card__desc'>The red and orange sand of the desert are very beautiful, let's take a trip here.</p>
+              <h4 className='topdeals__card__head'>Kochi - UK</h4>
+              <p className='topdeals__card__desc'>Unveiling Timeless Beauty and Modern Wonders, let's take a trip here.</p>
             </div>
             <div className='topdeals__card__price'>
               <div className="topdeals__card__price__left">

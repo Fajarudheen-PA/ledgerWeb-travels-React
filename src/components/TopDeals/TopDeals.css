@@ -11,10 +11,12 @@
 .topdeals__card-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .topdeals__card {
   width: 100%;
   border: 1px solid #d0d6f9;
+  background-color: #f2f2f2;
   border-radius: 16px;
   margin: 16px 0;
 }
@@ -23,10 +25,12 @@
   flex-direction: column;
   justify-content: center;
   min-height: 120px;
+  background-color: #ffffff;
+  border-radius: 0 0 16px 16px;
 }
 .topdeals__card__image {
   width: 100%;
-  max-height: 280px;
+  max-height: calc(420px + 0.9vw);
   border-radius: 16px 16px 0 0;
   box-shadow: 0px 14px 9px -5px rgba(147, 233, 190, 0.8);
   margin-bottom: 8px;
@@ -45,7 +49,6 @@
 }
 .topdeals__card__price {
   display: flex;
-  background-color: #f2f2f2;
   border-radius: 0 0 16px 16px;
 }
 .topdeals__card__price__left {

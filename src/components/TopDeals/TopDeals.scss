@@ -31,9 +31,8 @@
         }
         &__image{
             width: 100%;
-            // height: fit-content;
             object-fit: cover;
-            max-height: 380px;
+            max-height: 365px;
             border-radius: $spacer-3 $spacer-3 0 0;
             box-shadow: 0px 14px 9px -5px rgba(147, 233, 190, 0.8);
             margin-bottom: $spacer-2;

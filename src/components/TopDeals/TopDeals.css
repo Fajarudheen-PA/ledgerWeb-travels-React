@@ -1,5 +1,5 @@
 .topdeals {
-  padding: 16px 0;
+  padding: 0 0 32px 0;
   background-color: #ffffff;
 }
 .topdeals__main-head {
@@ -30,7 +30,9 @@
 }
 .topdeals__card__image {
   width: 100%;
-  max-height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 380px;
   border-radius: 16px 16px 0 0;
   box-shadow: 0px 14px 9px -5px rgba(147, 233, 190, 0.8);
   margin-bottom: 8px;
@@ -91,6 +93,9 @@
 .topdeals__card__btn:hover {
   scale: 1.1;
   color: #ffffff;
+}
+.topdeals hr {
+  margin-top: 40px;
 }
 
 @keyframes circularMotion {
@@ -156,7 +161,7 @@
   }
   .topdeals__card__content {
     justify-content: flex-start;
-    min-height: 100px;
+    min-height: 119px;
   }
   .topdeals__card__image {
     max-height: 342px;

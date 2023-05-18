@@ -1,6 +1,6 @@
 .banner {
   padding: 40px 16px;
-  background-image: url("../../../assets/background-home-mobile.jpg");
+  background-image: url("../../../assets/background-home-tablet.jpg");
   background-size: cover;
   width: 100%;
   min-height: 500px;
@@ -19,6 +19,7 @@
 .banner__left {
   text-align: center;
   width: 100%;
+  margin-top: 40px;
 }
 .banner__main-header {
   color: #d0d6f9;
@@ -161,9 +162,13 @@
   .banner__wrap {
     flex-wrap: nowrap;
     gap: unset;
+    min-height: 500px;
   }
   .banner__left {
     width: 50%;
+  }
+  .banner__desc {
+    font-size: 17px;
   }
   .banner__right {
     width: 50%;

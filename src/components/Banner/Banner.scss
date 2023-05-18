@@ -3,7 +3,7 @@
 
 .banner{
     padding: $spacer-6 $spacer-3;
-    background-image: url('../../../assets/background-home-mobile.jpg');
+    background-image: url('../../../assets/background-home-tablet.jpg');
     background-size: cover;
     width: 100%;
     min-height: 500px;
@@ -22,6 +22,7 @@
     &__left{
         text-align: center;
         width: 100%;
+        margin-top: $spacer-6;
     }
     &__main-header{
         color: $color-grey;
@@ -177,9 +178,13 @@
         &__wrap{
             flex-wrap: nowrap;
             gap: unset;
+            min-height: 500px;
         }
         &__left{
             width: 50%;
+        }
+        &__desc{
+            font-size: 17px;
         }
         &__right{
             width: 50%;

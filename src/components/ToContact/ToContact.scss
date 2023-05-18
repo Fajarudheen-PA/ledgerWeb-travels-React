@@ -2,5 +2,27 @@
 
 .tocontact{
     padding: $spacer-5 0;
-    background-color: $color-white;
+    background-color: $color-blue-3;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left{
+        width: 100%;
+        text-align: start;
+    }
+    &__right{
+        width: 100%;
+    }
+    &__main-head{
+        color: $color-white;
+        font-size: 35px;
+        font-weight: $font-bold;
+        text-align: start;
+    }
+    &__desc{
+        color: $color-grey-3;
+        font-weight: $font-regular;
+    }
 }

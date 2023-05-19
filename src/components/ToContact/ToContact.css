@@ -1,10 +1,12 @@
 .tocontact {
-  padding: 32px 0;
+  padding: 40px 0;
   background-color: #0C111F;
 }
 .tocontact__wrap {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 .tocontact__left {
   width: 100%;
@@ -15,11 +17,44 @@
 }
 .tocontact__main-head {
   color: #ffffff;
-  font-size: 35px;
+  font-size: calc(32px + 0.9vw);
   font-weight: 700;
   text-align: start;
+  margin-bottom: 16px;
 }
 .tocontact__desc {
-  color: #595959;
+  font-size: calc(11px + 0.9vw);
+  color: #d0d6f9;
   font-weight: 400;
+  margin-bottom: 24px;
+}
+.tocontact__btn {
+  display: flex;
+  border-radius: 2.3rem;
+  width: 130px;
+  min-width: 100px;
+  height: 40px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  background-image: linear-gradient(145deg, #F9EC7D, #F5B100);
+  color: #000000;
+  border: 1px solid #F5B100;
+  font-weight: 700;
+  box-shadow: 3px -3px 9px 1px #F5B100;
+  margin: auto;
+  text-decoration: none;
+}
+.tocontact__btn:hover {
+  scale: 1.1;
+  color: unset;
+}
+.tocontact__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  margin-bottom: 24px;
+  box-shadow: 0px 16px 11px 0px #151e37;
 }/*# sourceMappingURL=ToContact.css.map */

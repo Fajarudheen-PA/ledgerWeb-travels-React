@@ -1,12 +1,14 @@
 @import "../../styles/variables.scss";
 
 .tocontact{
-    padding: $spacer-5 0;
+    padding: $spacer-6 0;
     background-color: $color-blue-3;
 
     &__wrap{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: space-between;
     }
     &__left{
         width: 100%;
@@ -17,12 +19,44 @@
     }
     &__main-head{
         color: $color-white;
-        font-size: 35px;
+        font-size: calc($spacer-5 + 0.9vw);
         font-weight: $font-bold;
         text-align: start;
+        margin-bottom: $spacer-3;
     }
     &__desc{
-        color: $color-grey-3;
+        font-size: calc(11px + 0.9vw);
+        color: $color-grey;
         font-weight: $font-regular;
+        margin-bottom: $spacer-4;
+    }
+    &__btn{
+        display: flex;
+        border-radius: 2.3rem;
+        width: 130px;
+        min-width: 100px;
+        height: 40px;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: $spacer-0 $spacer-3;
+        background-image: linear-gradient(145deg,#F9EC7D,#F5B100);
+        color: $color-black;
+        border: 1px solid $color-gold;
+        font-weight: $font-bold;
+        box-shadow: 3px -3px 9px 1px $color-gold;
+        margin: auto;
+        text-decoration: none;
+        &:hover{
+            scale: 1.1;
+            color: unset;
+        }
+    }
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        border-radius: $spacer-6;
+        margin-bottom: $spacer-4;
+        box-shadow: 0px 16px 11px 0px $color-blue-4;
     }
 }

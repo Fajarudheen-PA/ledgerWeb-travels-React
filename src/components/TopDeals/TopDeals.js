@@ -64,7 +64,6 @@ function TopDeals() {
           </div>
 
         </div>
-        <hr />
       </div>
     </div>
   )

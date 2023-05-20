@@ -1,0 +1,14 @@
+.reviews {
+  background-color: #595959;
+  padding: 32px 0;
+}
+.reviews__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews__left {
+  width: 100%;
+}
+.reviews__right {
+  width: 100%;
+}/*# sourceMappingURL=Reviews.css.map */

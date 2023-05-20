@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.reviews{
+    background-color: $color-grey-3;
+    padding: $spacer-5 0;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left{
+        width: 100%;
+    }
+    &__right{
+        width: 100%;
+    }
+}

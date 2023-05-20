@@ -14,6 +14,8 @@
 }
 .tocontact__right {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .tocontact__main-head {
   color: #ffffff;
@@ -23,7 +25,7 @@
   margin-bottom: 16px;
 }
 .tocontact__desc {
-  font-size: calc(11px + 0.9vw);
+  font-size: calc(10px + 0.9vw);
   color: #d0d6f9;
   font-weight: 400;
   margin-bottom: 24px;
@@ -31,7 +33,7 @@
 .tocontact__btn {
   display: flex;
   border-radius: 2.3rem;
-  width: 130px;
+  width: calc(130px + 0.9vw);
   min-width: 100px;
   height: 40px;
   font-size: 15px;
@@ -57,4 +59,38 @@
   border-radius: 40px;
   margin-bottom: 24px;
   box-shadow: 0px 16px 11px 0px #151e37;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .tocontact__btn {
+    font-size: calc(9px + 0.9vw);
+  }
+  .tocontact__image {
+    width: 80%;
+  }
+}
+@media (min-width: 769px) {
+  .tocontact__wrap {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 2%;
+  }
+  .tocontact__left {
+    width: 50%;
+    padding: 32px 0;
+  }
+  .tocontact__right {
+    width: 50%;
+  }
+  .tocontact__btn {
+    width: calc(155px + 0.9vw);
+    font-size: calc(8px + 0.9vw);
+    margin: unset;
+  }
+  .tocontact__desc {
+    margin: 40px 0;
+  }
+  .tocontact__image {
+    max-height: 400px;
+  }
 }/*# sourceMappingURL=ToContact.css.map */

@@ -83,8 +83,8 @@
     width: 50%;
   }
   .tocontact__btn {
-    width: calc(155px + 0.9vw);
-    font-size: calc(8px + 0.9vw);
+    width: 170px;
+    font-size: 20px;
     margin: unset;
   }
   .tocontact__desc {

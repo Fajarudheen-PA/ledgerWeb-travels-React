@@ -4,6 +4,7 @@ import Banner from '../components/Banner/Banner'
 import Overview from '../components/Overview/Overview'
 import TopDeals from '../components/TopDeals/TopDeals'
 import ToContact from '../components/ToContact/ToContact'
+import Reviews from '../components/Reviews/Reviews'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Overview/>
         <TopDeals/>
         <ToContact/>
+        <Reviews/>
     </div>
   )
 }

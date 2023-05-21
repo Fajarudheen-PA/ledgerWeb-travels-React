@@ -101,3 +101,11 @@
         }
     }
 }
+
+@include desktop{
+    .tocontact{
+        &__desc{
+            font-size: calc(6px + 0.9vw);
+        }
+    }
+}

@@ -94,4 +94,9 @@
   .tocontact__image {
     max-height: 400px;
   }
+}
+@media (min-width: 1024px) {
+  .tocontact__desc {
+    font-size: calc(6px + 0.9vw);
+  }
 }/*# sourceMappingURL=ToContact.css.map */

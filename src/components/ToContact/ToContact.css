@@ -67,6 +67,7 @@
   }
   .tocontact__image {
     width: 80%;
+    max-height: 400px;
   }
 }
 @media (min-width: 769px) {

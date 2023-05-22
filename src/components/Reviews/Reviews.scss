@@ -1,17 +1,39 @@
 @import "../../styles/variables.scss";
 
 .reviews{
-    background-color: $color-grey-3;
+    background-color: $color-grey-5;
     padding: $spacer-5 0;
 
     &__wrap{
         display: flex;
         flex-wrap: wrap;
+        gap: 2%;
     }
     &__left{
         width: 100%;
     }
+    &__card{
+        width: 100%;
+        background-color: $color-white;
+        box-shadow: 0px 0px 16px -3px $color-grey;
+        border-radius: 12px;
+        margin: $spacer-3 0;
+    }
     &__right{
         width: 100%;
+    }
+    &__main-head{
+        font-size: calc(32px + 0.9vw);
+        color: $color-black;
+        font-weight: $font-bold;
+        margin-bottom: $spacer-3;
+        &--sub-head{
+            font-size: calc(20px + 0.9vw);
+        }
+    }
+    &__desc{
+        font-size: calc(10px + 0.9vw);
+        margin-bottom: $spacer-3;
+        color: $color-black;
     }
 }

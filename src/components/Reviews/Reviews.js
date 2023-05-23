@@ -20,6 +20,9 @@ function Reviews() {
                         <div className='reviews__card'>
                             <img src="" alt="Customer 1" />
                         </div>
+                        <div className='reviews__card'>
+                            <img src="" alt="Customer 1" />
+                        </div>
                     </Slider>
                 </div>
                 <div className="reviews__right">

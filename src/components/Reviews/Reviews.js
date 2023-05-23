@@ -9,21 +9,23 @@ function Reviews() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
     }; 
   return (
     <div className='reviews'>
         <div className="content-wrapper">
             <div className="reviews__wrap">
                 <div className="reviews__left">
-                    <Slider {...settings}>
-                        <div className='reviews__card'>
-                            <img src="" alt="Customer 1" />
-                        </div>
-                        <div className='reviews__card'>
-                            <img src="" alt="Customer 1" />
-                        </div>
-                    </Slider>
+                    <div className='reviews__card-grp'>
+                        <Slider {...settings}>
+                            <div className='reviews__card'>
+                                <div className='reviews__avatar-bg'>
+                                    <img src="../../../images/ledger-profile-avatar.png" alt="Customer 1" className='reviews__avatar' />
+                                </div>
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
                 <div className="reviews__right">
                     <h3 className='reviews__main-head'>Testimonials<br/><span className='reviews__main-head reviews__main-head--sub-head'>Ledger Webb Customers</span></h3>

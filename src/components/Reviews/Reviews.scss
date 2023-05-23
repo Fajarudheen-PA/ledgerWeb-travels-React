@@ -12,12 +12,38 @@
     &__left{
         width: 100%;
     }
-    &__card{
+    &__card-grp{
         width: 100%;
+        padding: 0 auto;
+    }
+    &__card{
+        width: 99% !important;
         background-color: $color-white;
-        box-shadow: 0px 0px 16px -3px $color-grey;
+        box-shadow: 0px 8px 6px -6px $color-grey;
         border-radius: 12px;
-        margin: $spacer-3 0;
+        margin: $spacer-4 auto;
+        min-height: 120px;
+        position: relative;
+        z-index: 999;
+        text-align: center;
+    }
+    &__avatar-bg{
+        width: calc(60px + 0.9vw);
+        height: auto;
+        border-radius: 50%;
+        position: absolute;
+        top: -20%;
+        left: 24px;
+        background-color: $color-white;
+    }
+    &__avatar{
+        width: calc(50px + 0.9vw);
+        height: auto;
+        border-radius: 50%;
+        position: relative;
+        top: 6px;
+        left: 5px;
+        box-shadow: 0px 5px 10px 0px $color-grey;
     }
     &__right{
         width: 100%;

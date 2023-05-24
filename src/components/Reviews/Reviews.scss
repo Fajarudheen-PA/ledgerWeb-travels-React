@@ -2,12 +2,12 @@
 
 .reviews{
     background-color: $color-grey-5;
-    padding: $spacer-5 0;
+    padding: $spacer-6 0;
 
     &__wrap{
         display: flex;
         flex-wrap: wrap;
-        gap: 2%;
+        flex-direction: column-reverse;
     }
     &__left{
         width: 100%;
@@ -63,7 +63,7 @@
             font-size: 13px;
         }
         &__desc{
-            font-size: 12px;
+            font-size: 13px;
             text-align: start;
         }
     }
@@ -83,5 +83,46 @@
         font-size: calc(10px + 0.9vw);
         margin-bottom: $spacer-3;
         color: $color-black;
+    }
+}
+
+@include mobile-pro-tablet{
+    .reviews{
+        &__wrap{
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 2%;
+        }
+        &__left{
+            width: 50%;
+        }
+        &__right{
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+
+@include tablet-pro-desktop{
+    .reviews{
+        &__wrap{
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 2%;
+        }
+        &__left{
+            width: 50%;
+        }
+        &__right{
+            width: 50%;
+            margin: auto;
+        }
+        &__card{
+            width: 80% !important;
+            margin-left: $spacer-6;
+        }
+        &__desc{
+            font-size: calc(6px + 0.9vw);
+        }
     }
 }

@@ -53,6 +53,12 @@
     }
 }
 
+@mixin tablet-pro-desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
 @mixin desktop {
     @media (min-width: 1024px) {
         @content;

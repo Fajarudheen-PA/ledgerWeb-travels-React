@@ -84,6 +84,10 @@
         margin-bottom: $spacer-3;
         color: $color-black;
     }
+
+    .slick-dots li button:before{
+        font-size: 12px;
+    }
 }
 
 @include mobile-pro-tablet{
@@ -119,7 +123,7 @@
         }
         &__card{
             width: 80% !important;
-            margin-left: $spacer-6;
+            margin-left: 65px;
         }
         &__desc{
             font-size: calc(6px + 0.9vw);

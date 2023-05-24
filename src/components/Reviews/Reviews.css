@@ -77,6 +77,9 @@
   margin-bottom: 16px;
   color: #000000;
 }
+.reviews .slick-dots li button:before {
+  font-size: 12px;
+}
 
 @media (min-width: 601px) and (max-width: 991px) {
   .reviews__wrap {
@@ -107,7 +110,7 @@
   }
   .reviews__card {
     width: 80% !important;
-    margin-left: 40px;
+    margin-left: 65px;
   }
   .reviews__desc {
     font-size: calc(6px + 0.9vw);

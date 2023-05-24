@@ -14,7 +14,6 @@
     }
     &__card-grp{
         width: 100%;
-        padding: 0 auto;
     }
     &__card{
         width: 99% !important;
@@ -22,18 +21,19 @@
         box-shadow: 0px 8px 6px -6px $color-grey;
         border-radius: 12px;
         margin: $spacer-4 auto;
-        min-height: 120px;
+        height: 190px;
         position: relative;
         z-index: 999;
         text-align: center;
+        padding: $spacer-2;
     }
     &__avatar-bg{
         width: calc(60px + 0.9vw);
         height: auto;
         border-radius: 50%;
-        position: absolute;
-        top: -20%;
-        left: 24px;
+        position: relative;
+        top: -32px;
+        left: 18px;
         background-color: $color-white;
     }
     &__avatar{
@@ -44,6 +44,28 @@
         top: 6px;
         left: 5px;
         box-shadow: 0px 5px 10px 0px $color-grey;
+    }
+    &__content{
+        // position: absolute;
+        // top: 35%;
+        // left: 18px;
+        &__name{
+            font-size: 18px;
+            font-weight: $font-bold;
+            text-align: start;
+            margin-bottom: $spacer-1;
+            margin-top: -$spacer-2;
+        }
+        &__rating{
+            color: $color-gold;
+            margin-bottom: $spacer-2;
+            text-align: start;
+            font-size: 13px;
+        }
+        &__desc{
+            font-size: 12px;
+            text-align: start;
+        }
     }
     &__right{
         width: 100%;

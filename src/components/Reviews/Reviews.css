@@ -12,7 +12,6 @@
 }
 .reviews__card-grp {
   width: 100%;
-  padding: 0 auto;
 }
 .reviews__card {
   width: 99% !important;
@@ -20,18 +19,19 @@
   box-shadow: 0px 8px 6px -6px #d0d6f9;
   border-radius: 12px;
   margin: 24px auto;
-  min-height: 120px;
+  height: 190px;
   position: relative;
   z-index: 999;
   text-align: center;
+  padding: 8px;
 }
 .reviews__avatar-bg {
   width: calc(60px + 0.9vw);
   height: auto;
   border-radius: 50%;
-  position: absolute;
-  top: -20%;
-  left: 24px;
+  position: relative;
+  top: -32px;
+  left: 18px;
   background-color: #ffffff;
 }
 .reviews__avatar {
@@ -42,6 +42,23 @@
   top: 6px;
   left: 5px;
   box-shadow: 0px 5px 10px 0px #d0d6f9;
+}
+.reviews__content__name {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 4px;
+  margin-top: -8px;
+}
+.reviews__content__rating {
+  color: #F5B100;
+  margin-bottom: 8px;
+  text-align: start;
+  font-size: 13px;
+}
+.reviews__content__desc {
+  font-size: 12px;
+  text-align: start;
 }
 .reviews__right {
   width: 100%;

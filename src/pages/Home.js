@@ -5,6 +5,7 @@ import Overview from '../components/Overview/Overview'
 import TopDeals from '../components/TopDeals/TopDeals'
 import ToContact from '../components/ToContact/ToContact'
 import Reviews from '../components/Reviews/Reviews'
+import Footer from '../components/Footer/Footer'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <TopDeals/>
         <ToContact/>
         <Reviews/>
+        <Footer/>
     </div>
   )
 }

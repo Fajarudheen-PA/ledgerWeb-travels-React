@@ -3,4 +3,63 @@
 .footer{
     background-color: $color-white;
     padding: $spacer-6 0;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left{
+        width: 100%;
+        text-align: center;
+    }
+    &__logo{
+        margin-bottom: $spacer-2;
+    }
+    &__image{
+        width: 50px;
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: $font-bold;
+        margin-left: $spacer-1;
+    }
+    &__desc{
+        color: $color-grey-3;
+        font-size: calc(10px + 0.9vw);
+        margin-bottom: $spacer-4;
+    }
+    &__right{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    &__contact-us{
+        width: 100%;
+        margin-bottom: $spacer-1;
+        &__head{
+            font-size: calc(13px + 0.9vw);
+            font-weight: $font-bold;
+            margin-bottom: $spacer-2;
+        }
+        p{
+            margin-bottom: $spacer-1;
+        }
+        &__link{
+            cursor: pointer;
+            color: $color-black;
+            text-decoration: none;
+            font-size: calc(10px + 0.9vw);
+            &:hover{
+                color: unset;
+            }
+            &--svg{
+                font-size: calc(21px + 0.9vw);
+                margin-top: $spacer-2;
+            }
+        }
+    }
+    &__follow-us{
+        width: 100%;
+    }
 }

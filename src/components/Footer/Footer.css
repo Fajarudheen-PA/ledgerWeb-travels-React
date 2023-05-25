@@ -1,4 +1,62 @@
 .footer {
   background-color: #ffffff;
   padding: 40px 0;
+}
+.footer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__left {
+  width: 100%;
+  text-align: center;
+}
+.footer__logo {
+  margin-bottom: 8px;
+}
+.footer__image {
+  width: 50px;
+}
+.footer__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.footer__desc {
+  color: #595959;
+  font-size: calc(10px + 0.9vw);
+  margin-bottom: 24px;
+}
+.footer__right {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer__contact-us {
+  width: 100%;
+  margin-bottom: 4px;
+}
+.footer__contact-us__head {
+  font-size: calc(13px + 0.9vw);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.footer__contact-us p {
+  margin-bottom: 4px;
+}
+.footer__contact-us__link {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  font-size: calc(10px + 0.9vw);
+}
+.footer__contact-us__link:hover {
+  color: unset;
+}
+.footer__contact-us__link--svg {
+  font-size: calc(21px + 0.9vw);
+  margin-top: 8px;
+}
+.footer__follow-us {
+  width: 100%;
 }/*# sourceMappingURL=Footer.css.map */

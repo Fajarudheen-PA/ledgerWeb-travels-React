@@ -2,7 +2,7 @@
 
 .footer{
     background-color: $color-white;
-    padding: $spacer-6 0;
+    padding: $spacer-5 0;
 
     &__wrap{
         display: flex;
@@ -34,9 +34,9 @@
         flex-wrap: wrap;
         text-align: center;
     }
-    &__contact-us{
+    &__link-grp{
         width: 100%;
-        margin-bottom: $spacer-1;
+        margin-bottom: $spacer-3;
         &__head{
             font-size: calc(13px + 0.9vw);
             font-weight: $font-bold;
@@ -59,7 +59,12 @@
             }
         }
     }
-    &__follow-us{
-        width: 100%;
+    &__copyright{
+        text-align: center;
+        &--font{
+            font-size: calc(10px + 0.9vw);
+            color: $color-grey-3;
+            margin-bottom: $spacer-2;
+        }
     }
 }

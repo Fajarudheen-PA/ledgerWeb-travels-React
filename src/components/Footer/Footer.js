@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './Footer.scss';
 
 function Footer() {
@@ -20,9 +22,9 @@ function Footer() {
                 <div className="footer__right">
                     <div className='footer__contact-us'>
                         <h4 className='footer__contact-us__head'>Contact US</h4>
-                        <p><Link to='tel:+91XXXXXXXXXX' className='footer__contact-us__link'>+91 XXXXXXXXXX</Link></p>
-                        <p><Link to='mailto:ledgerwebbcok@gmail.com' className='footer__contact-us__link'>ledgerwebbcok@gmail.com</Link></p>
-                        <p><Link to={url} className='footer__contact-us__link'><FontAwesomeIcon icon={faWhatsapp} className='footer__contact-us__link footer__contact-us__link--svg' /></Link></p>
+                        <p><Link to='tel:+91XXXXXXXXXX' className='footer__contact-us__link'><FontAwesomeIcon icon={faPhone} className='footer__contact-us__link footer__contact-us__link--svg' /> +91 XXXXXXXXXX</Link></p>
+                        <p><Link to='mailto:ledgerwebbcok@gmail.com' className='footer__contact-us__link'><FontAwesomeIcon icon={faEnvelope} className='footer__contact-us__link footer__contact-us__link--svg' /> ledgerwebbcok@gmail.com</Link></p>
+                        <p><Link to={url} className='footer__contact-us__link'><FontAwesomeIcon icon={faWhatsapp} className='footer__contact-us__link footer__contact-us__link--svg' /> WhatsApp</Link></p>
                     </div>
                     <div className="footer__follow-us">
 

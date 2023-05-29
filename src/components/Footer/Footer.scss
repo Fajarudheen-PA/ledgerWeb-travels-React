@@ -73,6 +73,7 @@
 
 @include tablet-desktop{
     .footer{
+        padding: $spacer-6 0;
         &__wrap{
             flex-wrap: nowrap;
         }

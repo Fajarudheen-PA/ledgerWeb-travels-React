@@ -1,4 +1,10 @@
 .devcontact {
   padding: 4px 0;
-  background-color: #595959;
+  background-color: #000000;
+}
+.devcontact__text {
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: calc(7px + 0.6vw);
 }/*# sourceMappingURL=DevContact.css.map */

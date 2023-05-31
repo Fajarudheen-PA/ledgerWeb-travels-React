@@ -10,6 +10,7 @@ import DevContact from '../DevContact/DevContact';
 function Footer() {
     const waUrl = "https://wa.me/qr/7O32GILDT5YYA1";
     const instUrl = "https://instagram.com/ledgerwebb_travel_partner?igshid=MzNlNGNkZWQ4Mg==";
+    const mail = "mailto:ledgerwebbcok@gmail.com";
   return (
     <><div className='footer'>
           <div className="content-wrapper">
@@ -25,7 +26,7 @@ function Footer() {
                       <div className='footer__link-grp'>
                           <h4 className='footer__link-grp__head'>Contact US</h4>
                           <p><Link to='tel:+91XXXXXXXXXX' className='footer__link-grp__link'><FontAwesomeIcon icon={faPhone} className='footer__link-grp__link footer__link-grp__link--svg' /> +91 XXXXXXXXXX</Link></p>
-                          <p><Link to='mailto:ledgerwebbcok@gmail.com' className='footer__link-grp__link'><FontAwesomeIcon icon={faEnvelope} className='footer__link-grp__link footer__link-grp__link--svg' /> ledgerwebbcok@gmail.com</Link></p>
+                          <p><Link to={mail} className='footer__link-grp__link'><FontAwesomeIcon icon={faEnvelope} className='footer__link-grp__link footer__link-grp__link--svg' /> ledgerwebbcok@gmail.com</Link></p>
                           <p><Link to={waUrl} className='footer__link-grp__link'><FontAwesomeIcon icon={faWhatsapp} className='footer__link-grp__link footer__link-grp__link--svg' /> WhatsApp</Link></p>
                       </div>
                       <div className="footer__link-grp">

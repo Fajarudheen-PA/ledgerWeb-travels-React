@@ -5,6 +5,7 @@ import { faWhatsapp, faFacebookF, faTwitter, faInstagram } from '@fortawesome/fr
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './Footer.scss';
+import DevContact from '../DevContact/DevContact';
 
 function Footer() {
     const waUrl = "https://wa.me/qr/7O32GILDT5YYA1";
@@ -39,6 +40,7 @@ function Footer() {
                 <p className='footer__copyright footer__copyright--font'>Copyright &copy; ledger Webb 2023</p>
             </div>
         </div>
+        <DevContact/>
     </div>
   )
 }

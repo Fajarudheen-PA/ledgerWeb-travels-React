@@ -2,7 +2,7 @@
 
 .footer{
     background-color: $color-black;
-    padding: $spacer-4 0;
+    padding: $spacer-4 0 $spacer-2 0;
 
     &__wrap{
         display: flex;
@@ -73,7 +73,7 @@
 
 @include tablet-desktop{
     .footer{
-        padding: $spacer-6 0;
+        padding: $spacer-6 0 $spacer-1 0;
         &__wrap{
             flex-wrap: nowrap;
         }

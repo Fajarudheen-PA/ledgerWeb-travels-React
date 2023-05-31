@@ -1,6 +1,6 @@
 .footer {
   background-color: #000000;
-  padding: 24px 0;
+  padding: 24px 0 8px 0;
 }
 .footer__wrap {
   display: flex;
@@ -70,7 +70,7 @@
 
 @media (min-width: 769px) {
   .footer {
-    padding: 40px 0;
+    padding: 40px 0 4px 0;
   }
   .footer__wrap {
     flex-wrap: nowrap;

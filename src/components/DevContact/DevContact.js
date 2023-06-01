@@ -13,9 +13,9 @@ function DevContact() {
     <div className='devcontact'>
         <div className="content-wrapper">
             <p className='devcontact__text'>Developer Contact
-              <span><Link to={mail}><FontAwesomeIcon icon={faEnvelope} /></Link></span>
-              <span><Link to={waUrl}><FontAwesomeIcon icon={faWhatsapp} /></Link></span>
-              <span><Link to={instUrl}><FontAwesomeIcon icon={faInstagram} /></Link></span>
+              <span className='devcontact__link'><Link to={mail}><FontAwesomeIcon icon={faEnvelope} className='devcontact__svg' /></Link></span>
+              <span className='devcontact__link'><Link to={waUrl}><FontAwesomeIcon icon={faWhatsapp} className='devcontact__svg' /></Link></span>
+              <span className='devcontact__link'><Link to={instUrl}><FontAwesomeIcon icon={faInstagram} className='devcontact__svg' /></Link></span>
             </p>
         </div>
     </div>

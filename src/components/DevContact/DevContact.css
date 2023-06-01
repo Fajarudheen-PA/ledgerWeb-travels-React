@@ -7,4 +7,17 @@
   margin-bottom: 8px;
   text-align: center;
   font-size: calc(7px + 0.6vw);
+}
+.devcontact__link {
+  margin: 0 4px;
+}
+.devcontact__svg {
+  color: #aaaaaa;
+}
+
+@media (min-width: 769px) {
+  .devcontact__text {
+    text-align: end;
+    font-size: calc(7px + 0.5vw);
+  }
 }/*# sourceMappingURL=DevContact.css.map */

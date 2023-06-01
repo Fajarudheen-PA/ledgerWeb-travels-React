@@ -10,4 +10,19 @@
         text-align: center;
         font-size: calc(7px + 0.6vw);
     }
+    &__link{
+        margin: 0 $spacer-1;
+    }
+    &__svg{
+        color: $color-grey-2;
+    }
+}
+
+@include tablet-desktop{
+    .devcontact{
+        &__text{
+            text-align: end;
+            font-size: calc(7px + 0.5vw);
+        }
+    }
 }

@@ -102,9 +102,10 @@
   }
   .footer__copyright {
     text-align: start;
-    margin-top: 24px;
+    margin-top: 16px;
   }
   .footer__copyright--font {
     font-size: calc(7px + 0.5vw);
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=Footer.css.map */

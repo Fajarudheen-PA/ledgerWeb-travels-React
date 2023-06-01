@@ -104,9 +104,10 @@
         }
         &__copyright{
         text-align: start;
-        margin-top: $spacer-4;
+        margin-top: $spacer-3;
             &--font{
                 font-size: calc(7px + 0.5vw);
+                margin-bottom: $spacer-0;
             }
         }
     }

@@ -1,3 +1,105 @@
 .formsdoc {
   padding: 32px 0;
+}
+.formsdoc .form-select {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.formsdoc .form-select:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+.formsdoc__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.formsdoc__main-head {
+  font-size: calc(32px + 0.9vw);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.formsdoc__label-grp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formsdoc .react-datepicker-wrapper {
+  width: 100%;
+}
+.formsdoc .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after,
+.formsdoc .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before,
+.formsdoc .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after,
+.formsdoc .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::before {
+  left: -50px;
+}
+.formsdoc .form-control:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.popup-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 220px;
+  top: -120px;
+  z-index: 999;
+  background: #ffffff;
+  padding: 20px 0 10px 0;
+  border-radius: 8px;
+  border: 1px solid black;
+  animation: slideIn 1s ease forwards;
+}
+
+.popup button {
+  cursor: pointer;
+  min-width: 150px;
+  min-height: 35px;
+  color: #000;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.popup button:hover {
+  color: #fff;
+  background: #000;
+}
+
+.version {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: -120px;
+  }
 }/*# sourceMappingURL=FormsDoc.css.map */

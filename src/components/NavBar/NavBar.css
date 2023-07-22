@@ -4,7 +4,7 @@
   background-color: #ffffff;
   box-shadow: 0 2px 5px #aaaaaa;
   width: 100vw;
-  z-index: 999;
+  z-index: 9999;
 }
 .ledger-navbar .container-xxl {
   padding: 0;

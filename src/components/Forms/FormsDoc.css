@@ -26,6 +26,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+.formsdoc__radio-grp {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.formsdoc__radio-grp__input {
+  margin-right: 4px;
+}
 .formsdoc .react-datepicker-wrapper {
   width: 100%;
 }
@@ -62,7 +71,10 @@
   animation: slideIn 1s ease forwards;
 }
 
-.popup button {
+.popup-confirm-button {
+  text-align: center;
+}
+.popup-confirm-button__button {
   cursor: pointer;
   min-width: 150px;
   min-height: 35px;
@@ -74,15 +86,16 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.popup button:hover {
+.popup-confirm-button__button:hover {
   color: #fff;
-  background: #000;
+  background: #1f88c9;
 }
 
-.version {
-  display: flex;
-  justify-content: center;
+.note {
   font-size: 12px;
+  text-align: center;
+  padding: 0 8px;
+  color: #DF1737;
 }
 
 .overlay {
@@ -93,6 +106,39 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.inside-count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.inside-count__right-grp {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup .form-control {
+  width: 40%;
+}
+
+.value-change-button {
+  width: 28px;
+  border-radius: 16px;
+  border: 1px solid #d0d6f9;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+}
+.value-change-button:hover {
+  border: 1px solid #1f88c9;
+  background-color: #1f88c9;
+}
+
+.popup .form-label {
+  margin: unset;
 }
 
 @keyframes slideIn {

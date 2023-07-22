@@ -31,7 +31,6 @@ function FormsDoc() {
                         <div className="formsdoc__label-grp">
 
                             {/* One way or Round trip radio */}
-                            {/* <label for='ttype'>Type</label> */}
                             <div className="formsdoc__radio-grp">
                                 <label>
                                     <input

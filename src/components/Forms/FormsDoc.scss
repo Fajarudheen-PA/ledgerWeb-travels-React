@@ -1,49 +1,88 @@
 @import "../../styles/variables.scss";
 
-.formsdoc{
+.formsdoc {
     padding: $spacer-5 0;
 
-    .form-select{
+    .form-select {
         margin-bottom: $spacer-3;
         width: 100%;
     }
-    .form-select:focus{
+
+    .form-select:focus {
         border-color: unset;
         box-shadow: unset;
     }
 
-    &__content{
+    &__banner {
+        background-image: url('../../../public/images/ledger-ticket-bg.jpg');
+        background-size: cover;
+        width: 100%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
+
+    &__content {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        position: relative;
+        top: 68px;
+        margin-bottom: $spacer-6;
+        // padding-bottom: $spacer-5;
+        padding: $spacer-4;
+        border-radius: $spacer-2;
+        background-color: $color-grey;
     }
 
-    &__main-head{
+    &__main-head {
         font-size: calc(32px + 0.9vw);
         text-align: center;
         font-weight: $font-bold;
         margin-bottom: $spacer-5;
     }
 
-    &__label-grp{
+    &__label-grp {
         display: flex;
         flex-wrap: wrap;
+
         // justify-content: center;
+        .form-control {
+            margin-bottom: $spacer-3;
+        }
     }
 
-    &__radio-grp{
+    &__radio-grp {
         display: flex;
         width: 100%;
         gap: $spacer-3;
         margin-bottom: $spacer-2;
-        &__input{
+
+        &__input {
             margin-right: $spacer-1;
+        }
+
+        &__button {
+            cursor: pointer;
+            min-width: 150px;
+            min-height: 40px;
+            color: #000;
+            background: #fff;
+            border: 1px solid grey;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+
+            &:hover {
+                color: $color-white;
+                background: $color-blue;
+            }
         }
     }
 
-    .react-datepicker-wrapper{
+    .react-datepicker-wrapper {
         width: 100%;
     }
 
@@ -54,26 +93,28 @@
         left: -50px;
     }
 
-    .form-control:focus{
+    .form-control:focus {
         border-color: unset;
         box-shadow: unset;
     }
-    
+
 }
 
-.popup-parent{
+.popup-parent {
     display: flex;
     justify-content: center;
-}
-.popup {
     position: relative;
+    bottom: 145px;
+}
+
+.popup {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 400px;
     min-height: 220px;
-    top: -120px;
     z-index: 999;
     background: $color-white;
     padding: 20px 0 10px 0;
@@ -81,9 +122,11 @@
     border: 1px solid black;
     animation: slideIn 1s ease forwards;
 }
-.popup-confirm-button{
+
+.popup-confirm-button {
     text-align: center;
-    &__button{
+
+    &__button {
         cursor: pointer;
         min-width: 150px;
         min-height: 35px;
@@ -94,14 +137,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
-        &:hover{
+
+        &:hover {
             color: #fff;
             background: $color-blue;
         }
     }
 }
 
-.note{
+.note {
     font-size: 12px;
     text-align: center;
     padding: 0 $spacer-2;
@@ -116,46 +160,49 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
 
-.inside-count{
+.inside-count {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: $spacer-2;
-    &__right-grp{
+
+    &__right-grp {
         width: 60%;
         display: flex;
         justify-content: space-between;
     }
 }
 
-.popup .form-control{
+.popup .form-control {
     width: 40%;
 }
 
-.value-change-button{
+.value-change-button {
     width: 28px;
     border-radius: 16px;
     border: 1px solid $color-grey;
     background-color: $color-white;
     color: $color-black;
     font-weight: $font-bold;
-    &:hover{
+
+    &:hover {
         border: 1px solid $color-blue;
         background-color: $color-blue;
     }
 }
 
-.popup .form-label{
+.popup .form-label {
     margin: unset;
 }
 
-  @keyframes slideIn {
+@keyframes slideIn {
     0% {
-      top: -100px;
+        top: -100px;
     }
+
     100% {
-      top: -120px;
+        top: -120px;
     }
 }

@@ -6,9 +6,9 @@ import FormsDoc from '../components/Forms/FormsDoc'
 function Forms() {
   return (
     <div>
-        {/* <NavBar/> */}
+        <NavBar/>
         <FormsDoc/>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

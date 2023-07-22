@@ -24,6 +24,9 @@ function FormsDoc() {
 
     return (
         <div className='formsdoc'>
+            <div className='formsdoc__banner'>
+
+            </div>
             <div className="content-wrapper">
                 <div className="formsdoc__content">
                     <h2 className="formsdoc__main-head">Let us know</h2>
@@ -96,9 +99,17 @@ function FormsDoc() {
                             <label for="passenger-count" className='form-label'>Number of Passengers:</label>
                             <input type="number" className='form-control' onClick={() => setPop(!pop)} id='passenger-count' placeholder='Enter count' />
 
-                            <label></label>
+                            {/* Class */}
+                            <label for='classtype' className="form-label">Class:</label>
+                            <select className='form-select' id='classtype'>
+                                <option value='Economy' selected>Economy</option>
+                                <option value='Premium-Economy'>Premium Economy</option>
+                                <option value='Business'>Business</option>
+                            </select>
 
-
+                            <div style={{ margin: "0 auto" }}>
+                                <button className='formsdoc__radio-grp__button'>Submit</button>
+                            </div>
 
 
 

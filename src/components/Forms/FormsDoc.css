@@ -9,12 +9,25 @@
   border-color: unset;
   box-shadow: unset;
 }
+.formsdoc__banner {
+  background-image: url("../../../public/images/ledger-ticket-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+}
 .formsdoc__content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 68px;
+  margin-bottom: 40px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #d0d6f9;
 }
 .formsdoc__main-head {
   font-size: calc(32px + 0.9vw);
@@ -26,6 +39,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.formsdoc__label-grp .form-control {
+  margin-bottom: 16px;
+}
 .formsdoc__radio-grp {
   display: flex;
   width: 100%;
@@ -34,6 +50,22 @@
 }
 .formsdoc__radio-grp__input {
   margin-right: 4px;
+}
+.formsdoc__radio-grp__button {
+  cursor: pointer;
+  min-width: 150px;
+  min-height: 40px;
+  color: #000;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.formsdoc__radio-grp__button:hover {
+  color: #ffffff;
+  background: #1f88c9;
 }
 .formsdoc .react-datepicker-wrapper {
   width: 100%;
@@ -52,17 +84,18 @@
 .popup-parent {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 145px;
 }
 
 .popup {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 400px;
   min-height: 220px;
-  top: -120px;
   z-index: 999;
   background: #ffffff;
   padding: 20px 0 10px 0;

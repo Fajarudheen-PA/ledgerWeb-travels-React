@@ -1,11 +1,12 @@
 @import "../../styles/variables.scss";
 
 .formsdoc {
-    padding: $spacer-5 0;
+    padding: $spacer-5 0 0 0;
 
     .form-select {
         margin-bottom: $spacer-3;
         width: 100%;
+        border: 1px solid $color-black;
     }
 
     .form-select:focus {
@@ -17,8 +18,24 @@
         background-image: url('../../../public/images/ledger-ticket-bg.jpg');
         background-size: cover;
         width: 100%;
-        min-height: 600px;
+        min-height: 500px;
         margin: 0 auto;
+    }
+
+    &__top-head {
+        position: relative;
+        top: 200px;
+        text-align: center;
+        font-size: calc(1.5rem + .9vw);
+        font-weight: $font-bold;
+        color: $color-black;
+        -webkit-text-stroke: 0.7px $color-white;
+    }
+
+    &__body-bg{
+        // background: url("../../../assets/background-crew-desktop.jpg");
+        // background-size: cover;
+        background-color: aqua;
     }
 
     &__content {
@@ -28,12 +45,13 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 68px;
-        margin-bottom: $spacer-6;
+        top: -70px;
+        // margin-bottom: $spacer-6;
         // padding-bottom: $spacer-5;
         padding: $spacer-4;
         border-radius: $spacer-2;
-        background-color: $color-grey;
+        background-color: $color-white;
+        border: 1px solid $color-black;
     }
 
     &__main-head {
@@ -50,6 +68,7 @@
         // justify-content: center;
         .form-control {
             margin-bottom: $spacer-3;
+            border: 1px solid $color-black;
         }
     }
 
@@ -69,7 +88,7 @@
             min-height: 40px;
             color: #000;
             background: #fff;
-            border: 1px solid grey;
+            border: 1px solid $color-black;
             border-radius: 8px;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -204,5 +223,23 @@
 
     100% {
         top: -120px;
+    }
+}
+
+@include mobile-pro {
+    .formsdoc {
+        &__content {
+            width: 70%;
+            margin: auto;
+        }
+    }
+}
+
+@include tablet-desktop {
+    .formsdoc {
+        &__content {
+            width: 50%;
+            margin: auto;
+        }
     }
 }

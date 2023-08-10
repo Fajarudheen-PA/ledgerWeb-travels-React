@@ -25,104 +25,108 @@ function FormsDoc() {
     return (
         <div className='formsdoc'>
             <div className='formsdoc__banner'>
-
+                <div className="content-wrapper">
+                    <h2 className='formsdoc__top-head'>Embark on Your Journey: Book Your Adventure Today!</h2>
+                </div>
             </div>
-            <div className="content-wrapper">
-                <div className="formsdoc__content">
-                    <h2 className="formsdoc__main-head">Let us know</h2>
-                    <form>
-                        <div className="formsdoc__label-grp">
+            <div className='formsdoc__body-bg'>
+                <div className="content-wrapper">
+                    <div className="formsdoc__content">
+                        <h2 className="formsdoc__main-head">Let us know</h2>
+                        <form>
+                            <div className="formsdoc__label-grp">
 
-                            {/* One way or Round trip radio */}
-                            <div className="formsdoc__radio-grp">
-                                <label>
-                                    <input
-                                        type="radio"
-                                        value="oneWay"
-                                        checked={tripType === 'oneWay'}
-                                        onChange={handleTripTypeChange}
-                                        className='formsdoc__radio-grp__input'
+                                {/* One way or Round trip radio */}
+                                <div className="formsdoc__radio-grp">
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            value="oneWay"
+                                            checked={tripType === 'oneWay'}
+                                            onChange={handleTripTypeChange}
+                                            className='formsdoc__radio-grp__input'
+                                        />
+                                        One Way
+                                    </label>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            value="roundTrip"
+                                            checked={tripType === 'roundTrip'}
+                                            onChange={handleTripTypeChange}
+                                            className='formsdoc__radio-grp__input'
+                                        />
+                                        Round Trip
+                                    </label>
+                                </div>
+
+                                {/* From */}
+                                <label for='from' className="form-label">From:</label>
+                                <select className='form-select' id='from'>
+                                    <option value='Cochin' selected>Cochin</option>
+                                    <option value='Kozhikode'>Kozhikode</option>
+                                </select>
+
+                                {/* Going To */}
+                                <label for='to' className="form-label">To:</label>
+                                <select className='form-select' id='to'>
+                                    <option value='Cochin' selected>Cochin</option>
+                                    <option value='Kozhikode'>Kozhikode</option>
+                                </select>
+
+                                {/* Departure date */}
+                                <label for="departdate" class="form-label">Departure Date:</label>
+                                <div className="react-datepicker-wrapper">
+                                    <DatePicker
+                                        id="departdate"
+                                        name="departdate"
+                                        selected={null} // Set the selected date value here
+                                        onChange={() => { }} // Add onChange handler if needed
+                                        placeholderText="Select a date"
+                                        className='form-select'
                                     />
-                                    One Way
-                                </label>
-                                <label>
-                                    <input
-                                        type="radio"
-                                        value="roundTrip"
-                                        checked={tripType === 'roundTrip'}
-                                        onChange={handleTripTypeChange}
-                                        className='formsdoc__radio-grp__input'
-                                    />
-                                    Round Trip
-                                </label>
+                                </div>
+
+                                {/* Return date */}
+                                {tripType === "roundTrip" ? <><label for="returndate" class="form-label">Return Date:</label><div className="react-datepicker-wrapper">
+                                    <DatePicker
+                                        id="returndate"
+                                        name="returndate"
+                                        selected={null} // Set the selected date value here
+                                        onChange={() => { }} // Add onChange handler if needed
+                                        placeholderText="Select a date"
+                                        className='form-select' />
+                                </div></> : ""}
+
+                                {/* Number of Passengers */}
+                                <label for="passenger-count" className='form-label'>Number of Passengers:</label>
+                                <input type="number" className='form-control' onClick={() => setPop(!pop)} id='passenger-count' placeholder='Enter count' />
+
+                                {/* Class */}
+                                <label for='classtype' className="form-label">Class:</label>
+                                <select className='form-select' id='classtype'>
+                                    <option value='Economy' selected>Economy</option>
+                                    <option value='Premium-Economy'>Premium Economy</option>
+                                    <option value='Business'>Business</option>
+                                </select>
+
+                                <div style={{ margin: "0 auto" }}>
+                                    <button className='formsdoc__radio-grp__button'>Submit</button>
+                                </div>
+
+
+
                             </div>
 
-                            {/* From */}
-                            <label for='from' className="form-label">From:</label>
-                            <select className='form-select' id='from'>
-                                <option value='Cochin' selected>Cochin</option>
-                                <option value='Kozhikode'>Kozhikode</option>
-                            </select>
+                            {pop && (
+                                <div>
+                                    <div className="overlay" onClick={closePopUp}></div>
+                                    <PopUp />
+                                </div>
+                            )}
 
-                            {/* Going To */}
-                            <label for='to' className="form-label">To:</label>
-                            <select className='form-select' id='to'>
-                                <option value='Cochin' selected>Cochin</option>
-                                <option value='Kozhikode'>Kozhikode</option>
-                            </select>
-
-                            {/* Departure date */}
-                            <label for="departdate" class="form-label">Departure Date:</label>
-                            <div className="react-datepicker-wrapper">
-                                <DatePicker
-                                    id="departdate"
-                                    name="departdate"
-                                    selected={null} // Set the selected date value here
-                                    onChange={() => { }} // Add onChange handler if needed
-                                    placeholderText="Select a date"
-                                    className='form-select'
-                                />
-                            </div>
-
-                            {/* Return date */}
-                            {tripType === "roundTrip" ? <><label for="returndate" class="form-label">Return Date:</label><div className="react-datepicker-wrapper">
-                                <DatePicker
-                                    id="returndate"
-                                    name="returndate"
-                                    selected={null} // Set the selected date value here
-                                    onChange={() => { }} // Add onChange handler if needed
-                                    placeholderText="Select a date"
-                                    className='form-select' />
-                            </div></> : ""}
-
-                            {/* Number of Passengers */}
-                            <label for="passenger-count" className='form-label'>Number of Passengers:</label>
-                            <input type="number" className='form-control' onClick={() => setPop(!pop)} id='passenger-count' placeholder='Enter count' />
-
-                            {/* Class */}
-                            <label for='classtype' className="form-label">Class:</label>
-                            <select className='form-select' id='classtype'>
-                                <option value='Economy' selected>Economy</option>
-                                <option value='Premium-Economy'>Premium Economy</option>
-                                <option value='Business'>Business</option>
-                            </select>
-
-                            <div style={{ margin: "0 auto" }}>
-                                <button className='formsdoc__radio-grp__button'>Submit</button>
-                            </div>
-
-
-
-                        </div>
-
-                        {pop && (
-                            <div>
-                                <div className="overlay" onClick={closePopUp}></div>
-                                <PopUp />
-                            </div>
-                        )}
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

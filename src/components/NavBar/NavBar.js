@@ -21,16 +21,16 @@ function NavBar() {
                     <Link to='/' className='ledger-navbar__nav-link' aria-current="page">Home</Link>
                   </li>
                   <li class="ledger-navbar__nav-item">
-                    <Link to='/' className='ledger-navbar__nav-link'>About Us</Link>
+                    <Link to='/about' className='ledger-navbar__nav-link'>About Us</Link>
                   </li>
                   <li class="ledger-navbar__nav-item">
                     <Link to='/services' className='ledger-navbar__nav-link'>Services</Link>
                   </li>
                   <li class="ledger-navbar__nav-item">
-                    <Link to='/' className='ledger-navbar__nav-link'>Pricing</Link>
+                    <Link to='/blog' className='ledger-navbar__nav-link'>Blog</Link>
                   </li>
                   <li class="ledger-navbar__nav-item">
-                    <Link to='/' className='ledger-navbar__nav-link'>Reviews</Link>
+                    <Link to='/contact' className='ledger-navbar__nav-link'>Contact</Link>
                   </li>
                 </ul>
               </div>
